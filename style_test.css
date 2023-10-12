@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+  
+body {
+    min-height: 100vh;
+    /*background: url(images/background.jpg) no-repeat;*/
+    background-size: cover;
+    background-position: center;
+}
+  
+
+
+
+
+
+  .slider-1 {
+    width: 100%;
+    margin: 100px auto;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+  
+  }
+  .slider-1 .slider {
+    animation: slider-1 45s infinite ease-in-out;
+    display: flex;
+    height: 75vh;
+
+  }
+  .slider-container img {
+    position: absolute;
+    z-index: -1;
+  }
+  .slider-1 p {
+   /* background: url(images/fond_ecran.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    flex-shrink: 0;
+    padding: 72px 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 45px;
+    display: grid;
+    color: #f1f1f1;
+  }
+  
+  
+  /* 
+     5% par transition, nombre choisi arbitrairement.
+  
+     reste divisé par nb de pauses
+     80(%) / 4 = 20(%) par pause
+  */
+  
+  @keyframes slider-1 {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(-100%);
+    }
+    50%,
+    70% {
+      transform: translateX(-200%);
+    }
+    75%,
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  } 
+  
